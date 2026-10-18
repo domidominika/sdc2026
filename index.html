@@ -1,0 +1,237 @@
+<!-- ! + enter - generuje podstawowe znaczniki struktury html -->
+<!doctype html>
+<html lang="pl-PL">
+  <head>
+    <meta
+      description="BlaBlaBla to fikcyjna platforma do rozmów o wszystkim i o niczym.
+          Szukamy kont, które wyróżniają się pomysłowością."
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlaBlaBla | Wyróżnij się i sprzedaj wszystko!</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Przejdź do treści</a>
+    <nav>
+      <div class="container container--nav">
+        <ul>
+          <li><a href="#hello">Witaj</a></li>
+          <li><a href="#about">O nas</a></li>
+          <li class="has-submenu">
+            <a href="#how-to-apply">
+              Jak zaaplikować <span aria-hidden="true">▾</span>
+            </a>
+            <ul class="submenu">
+              <li><a href="#how-to-apply__step1">Krok 1</a></li>
+              <li><a href="#how-to-apply__step2">Krok 2</a></li>
+              <li><a href="#how-to-apply__step3">Krok 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#real-data">Realne dane</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main id="main">
+      <section id="hello">
+        <div class="container">
+          <h1>Witaj na mojej stronie!</h1>
+          <p>Witaj w BlaBlaBla! Dobrze, że jesteś!</p>
+        </div>
+      </section>
+      <section id="about" class="secondary">
+        <div class="container">
+          <h2>O nas</h2>
+          <div class="grid">
+            <div class="grid__item grid__item--two-thirds">
+              <p>
+                BlaBlaBla to fikcyjna strona do rozmów o wszystkim i o niczym.
+                Możesz założyć tu konto i dołączyć do osób ciekawych świata.
+                Mamy swoją siedzibę we Wroblabiu przy ul. Blabskiej 21/12. Do
+                budynku można wejść bez problemu. Nasze biuro mieści się na
+                parterze.
+              </p>
+              <h3>Tekst łatwy do czytania</h3>
+              <p>
+                <a
+                  href="assets/etr_tekst_latwy_do_czytania.pdf"
+                  target="_blank"
+                  download="blablabla-etr"
+                >
+                  Pobierz tekst łatwy do czytania
+                  <br />
+                  <span class="link__etr--span"
+                    >etr_tekst_latwy_do_czytania.pdf | 188 KB</span
+                  >
+                </a>
+              </p>
+            </div>
+            <div class="grid__item grid__item--third">
+              <img src="assets/flower.jpg" alt="Rozaaa rozaaa" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="how-to-apply">
+        <div class="container">
+          <h2>Jak zaaplikować</h2>
+          <p>To tylko trzy proste kroki i wszystko będzie Twoje!</p>
+          <ol start="3">
+            <li id="how-to-apply__step1">Wymyśl nazwę swojego projektu</li>
+            <li id="how-to-apply__step2" value="6">Stwórz konto na BlaBlaBla z nazwą projektu</li>
+            <li id="how-to-apply__step3">
+              Wyślij do nas na maila bleeee@blablabla.com z linkiem do Twojego
+              konta
+            </li>
+          </ol>
+          <h3>Wciąż się wahasz?</h3>
+          <p>
+            <a
+              href="https://www.google.pl/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Sprawdź nasze opinie w Internecie</a
+            >
+          </p>
+          <p>
+
+            <!-- todo: button otwiera forlumarz-->
+           <!--<button
+              class="button"
+              type="button"
+              aria-expanded="false"
+              aria-controls="form-apply"
+            >
+              Zaaplikuj
+            </button>--> 
+
+          <form id="form-apply">
+            <div>
+              <label for="first-name">Imię</label>
+              <input
+                type="text"
+                id="first-name"
+                name="firstName"
+                autocomplete="given-name"
+                required
+              />
+            </div>
+            <div>
+              <label for="last-name">Nazwisko</label>
+              <input
+                type="text"
+                id="last-name"
+                name="lasyName"
+                autocomplete="family-name"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="user-email">Email</label>
+              <input
+                type="email"
+                id="user-email"
+                name="userName"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div>
+              <label for="user-profile-link">Link do profilu</label>
+              <input
+                type="url"
+                id="user-profile-link"
+                name="userProfileLink"
+                placeholder="https://example.com"
+                required
+              />
+            </div>
+            <button class="button" type="submit">Wyślij zgłoszenie</button>
+          </form>
+
+          </p>
+
+        </div>
+      </section>
+      <section id="real-data" class="secondary">
+        <div class="container">
+          <h2>Realne dane</h2>
+          <p>Chcesz zobaczyć co realnie daje udział w naszym programie?</p>
+
+          <table>
+            <caption>
+              Poniższe liczby są przykładowe. Pokazują, że wraz ze wzrostem
+              wkładu finansowego rośnie liczba wizyt.
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Pakiet</th>
+                <th scope="col">Wkład finansowy (zł)</th>
+                <th scope="col">Wizyty miesięcznie</th>
+                <th scope="col">Zarobek</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Free</th>
+                <td>0</td>
+                <td>120</td>
+                <td>920</td>
+              </tr>
+              <tr>
+                <th scope="row">Basic</th>
+                <td>50</td>
+                <td>260</td>
+                <td>5820</td>
+              </tr>
+              <tr>
+                <th scope="row">Professional</th>
+                <td>100</td>
+                <td>430</td>
+                <td>34420</td>
+              </tr>
+              <tr>
+                <th scope="row">Enterprise</th>
+                <td>200</td>
+                <td>1180</td>
+                <td>150000</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th scope="row" colspan="2">Średni wzrost</th>
+
+                <td>+39%</td>
+                <td>+65%</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container container--nav">
+        <div class="grid">
+          <div class="grid__item grid__item--two-thirds">
+            <nav>
+              <ul>
+                <li><a href="#">Do góry</a></li>
+                <li><a href="mailto:bleeee@blebleble.com">Napisz do nas</a></li>
+                <li><a href="tel:123321123">Zadzwon 123 321 123</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="grid__item grid__item--third">
+            <p>
+              BlaBlaBla sp. Z o.o. <br />
+              ul. Blabska 21/12 <br />
+              50-006 Wroblab
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

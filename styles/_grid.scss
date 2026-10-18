@@ -1,0 +1,29 @@
+.container {
+  width: min(calc(100% - 2rem), var(--content-width));
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.grid__item {
+  grid-column: span 12;
+  min-width: 0;
+}
+
+@media (min-width: 48rem) {
+  .grid__item--half {
+    grid-column: span 6;
+  }
+
+  .grid__item--third {
+    grid-column: span 4;
+  }
+
+  .grid__item--two-thirds {
+    grid-column: span 8;
+  }
+}

@@ -1,0 +1,30 @@
+:root {
+  /* COLORS PALETTE*/
+
+  $dark-violet: #2e1b36;
+  $violet: #5c4168;
+  $light-violet: #f1e1fc;
+  $very-light-violet: #fbf7ff;
+
+  --color-text: #{$dark-violet};
+  --color-link: #{$violet};
+  --color-text-alt: #{$light-violet};
+  --color-nav-background: #{$dark-violet};
+  --color-nav-txt: #{$light-violet};
+  --color-background: #{$light-violet};
+  --color-background-alt: #{$very-light-violet};
+  // --color-primary: hsl(276, 82%, 94%);
+  --color-border: #{$dark-violet};
+  --color-button-bg: #{$dark-violet};
+  --color-button-txt: #{$light-violet};
+  --color-button-txt-alt: #{$dark-violet};
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+
+  --content-width: 70rem;
+}

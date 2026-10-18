@@ -1,0 +1,29 @@
+table {
+  border: 1px solid var(--color-border);
+  background-color: var(--color-background-alt);
+  border-spacing: 0;
+}
+
+caption {
+  margin: var(--space-2);
+  caption-side: bottom;
+}
+thead,
+tfoot {
+  tr {
+    border-radius: var(--space-2);
+    background-color: var(--color-background);
+    padding: var(--space-8);
+  }
+}
+
+td,
+th {
+  padding: var(--space-4);
+}
+
+tr {
+  &:hover {
+    background-color: var(--color-background);
+  }
+}
